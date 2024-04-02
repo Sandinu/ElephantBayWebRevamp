@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Permanent+Marker&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --c1 : #013180;
+    --c2 : #0061FE;
+    --c3 : #020102;
+    --c4 : #D9DADB;
+    --c5 : #609DFE;
+    --bg : #ECF3FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--bg);
+}
+nav{
+    padding: 10px 20px;
+    background: rgba(1, 50, 128, 0.3);
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 7px 7px;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+}
+
+nav img{
+    width: 70px;
+}
+
+nav ul{
+    list-style-type: none;
+    position: absolute;
+    right: 10px;
+}
+nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: ubuntu;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1px;
+}
+nav ul li a:hover{
+    color: var(--c5);
+}
+.active{
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--c5);
+}
+.book{
+    width: 100px;
+    height: 50px;
+    background: var(--c2);
+    padding: 15px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+}
+.book:hover{
+    background: var(--c5);
+    color: white;
+}
+
+
+#section1{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+.overlay{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 33, 87, 0.05),rgba(0, 33, 87, 0.6));
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.overlayb{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.title{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 6%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: OutFit;
+}
+.title a{
+    text-decoration: none;
+    color: white;
+}
+.title h6{
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-family: ubuntu !important;
+    padding: 10px 15px;
+    backdrop-filter: blur(10px);
+    width: 220px;
+    margin: auto;
+    border: 0.1px solid white;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+}
+.title h1{
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+.title h1 span{
+    font-weight: 500;
+    font-family: Permanent Marker;
+}
+.title h3{
+    font-family: ubuntu;
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-size: 25px;
+    color: var(--bg);
+    margin-top: 5px;
+}
+.buttons{
+    margin-top: 25px;
+}
+.buttons button{
+    width: 230px;
+    height: 50px;
+    margin: auto 5px;
+    border: none;
+    font-family: ubuntu;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 4px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.bookBtn{
+    background: var(--c2);
+}
+.expBtn{
+    background: none;
+    border: 1px solid white !important;
+}
+
+.bookBtn:hover{
+    background: var(--c5);
+    color: var(--c3);
+}
+
+.expBtn:hover{
+    background: white;
+    border: none;
+    color: var(--c3);
+}
+.scroll{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg);
+    z-index: 2;
+    padding: 3px;
+    align-items: center;
+    font-family: ubuntu;
+    color: var(--c2);
+    letter-spacing: 10px;
+    display: flex;
+}
+.scroll div{
+    white-space: nowrap;
+    animation: animate 30s linear infinite;
+    animation-delay: -30s;
+}
+.scroll div span{
+    display: inline-flex;
+    margin: auto 30px;
+    font-size: 13px;
+}
+.scroll div:nth-child(2){
+    animation: animate2 30s linear infinite;
+    animation-delay: -15s;
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
