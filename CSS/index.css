@@ -78,7 +78,7 @@ nav ul li a:hover{
 
 
 #section1{
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     position: relative;
     height: 100vh;
@@ -89,14 +89,13 @@ nav ul li a:hover{
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
+    min-width: 100vw;
+    width: 100vw;
     z-index: 0;
 }
 .overlay{
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0, 33, 87, 0.05),rgba(0, 33, 87, 0.6));
     z-index: 1;
@@ -108,7 +107,7 @@ nav ul li a:hover{
 }
 .overlayb{
     content: '';
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
@@ -201,7 +200,7 @@ nav ul li a:hover{
 .scroll{
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background: var(--bg);
     z-index: 2;
     padding: 3px;
@@ -225,15 +224,10 @@ nav ul li a:hover{
     animation: animate2 30s linear infinite;
     animation-delay: -15s;
 }
-#section2{
-    width: 90%;
+#sec2{
+    text-align: center;
+    max-width: 100vw;
     overflow: hidden;
-}
-#section2 .sc2text{
-    width: 20%;
-}
-#section2 img{
-    width: 80px;
 }
 
 
