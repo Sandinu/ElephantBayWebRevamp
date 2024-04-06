@@ -8,6 +8,9 @@
     --c5 : #609DFE;
     --bg : #ECF3FF;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -19,36 +22,6 @@ body{
     background: var(--bg);
     text-align: center;
 }
-
-.hero{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 33, 87, 0.05),rgba(0, 33, 87, 0.6));
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-.bgVid{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-@media (min-aspect-ratio:16/9){
-    .bgVid{
-        height: auto;
-        width: 100%;
-    }
-}
-@media (max-aspect-ratio:16/9){
-    .bgVid{
-        width: auto;
-        height: 100%;
-    }
-}
-
-
 nav{
     padding: 10px 20px;
     background: rgba(1, 50, 128, 0.3);
@@ -105,6 +78,40 @@ nav ul li a:hover{
     background: var(--c5);
     color: white;
 }
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 33, 87, 0.05),rgba(0, 33, 87, 0.6));
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.bgVid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+    .bgVid{
+        height: auto;
+        width: 100%;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .bgVid{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
+
 
 .water{
     position: absolute;
@@ -235,8 +242,59 @@ nav ul li a:hover{
     animation: animate2 30s linear infinite;
     animation-delay: -15s;
 }
+#sec2{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.sc2img img{
+    width: 95%;
+}
+.sc2text{
+    width: 60%;
+    padding: 50px;
+    text-align: justify;
+}
+.sc2text h3{
+    color: var(--c2);
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.sc2text h2{
+    color: var(--c1);
+    font-size: 38px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.sc2text h2 span{
+    font-size: 30px;
+    font-weight: 500;
+}
+.sc2text p{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(56, 56, 56);
+}
 
 
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+.appear{
+    transform: translateY(0px);
+    opacity: 1;
+    display: initial;
+}
 @keyframes animate{
     0%{
         transform: translateX(100%);
