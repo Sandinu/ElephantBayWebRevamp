@@ -249,11 +249,11 @@ nav ul li a:hover{
     width: 100%;
 }
 .sc2img img{
-    width: 95%;
+    width: 85%;
 }
 .sc2text{
     width: 60%;
-    padding: 50px;
+    padding: 80px 50px 80px 80px;
     text-align: justify;
 }
 .sc2text h3{
@@ -275,12 +275,131 @@ nav ul li a:hover{
 }
 .sc2text p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 17px;
     letter-spacing: 1px;
     line-height: 25px;
     color: rgb(56, 56, 56);
 }
 
+.CText{
+    width: 80%;
+    padding: 70px 40px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: white;
+}
+.CText h3{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 20px;
+    font-family: OutFit;
+}
+.CText h2{
+    font-size: 40px;
+    letter-spacing: 10px;
+    font-family: OutFit;
+}
+.CText p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+    line-height: 25px;
+}
+.carousel_cont{
+    position: relative;
+}
+.lineL{
+    content: '';
+    border-left: 2px white solid;
+    position: absolute;
+    left: 50px;
+    height: 100%;
+}
+.lineR{
+    content: '';
+    border-right: 2px white solid;
+    position: absolute;
+    right: 50px;
+    height: 100%;
+}
+.carousel{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: rgba(1, 50, 128, 0.65);
+}
+.carousel::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.carousel_item{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    align-items: center;
+    display: none;
+}
+.carousel_item img{
+    width: 100%;
+    align-items: center;
+}
+.carousel_item__active,
+.carousel_item__pos_prev,
+.carousel_item__pos_next{
+   display: block;
+   z-index: -1;
+}
+
+.carousel_item__pos_prev{
+   left: -100%;
+}
+
+.carousel_item__pos_next{
+   left: 100%;
+}
+
+.carousel_item__prev{
+   transform: translateX(100%);
+   transition: transform .5s ease-in-out;
+}
+
+.carousel_item__next{
+   transform: translateX(-100%);
+   transition: transform .5s ease-in-out;
+}
+
+.carousel_indicator{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    z-index: 1;
+ }
+.carousel_dot{
+    display: block;
+    padding: .25rem;
+    background-color: rgba(255, 255, 255, .25);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+ 
+.carousel_dot__active{
+    background-color: lightskyblue;
+    cursor: default;
+    pointer-events: none;
+    transform: scale(1.5);
+}
+ 
 
 
 .reveal{
