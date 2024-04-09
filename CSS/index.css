@@ -424,14 +424,18 @@ nav ul li a:hover{
     overflow: hidden;
     border-radius: 7px;
     position: relative;
+    transition: all 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.03);
 }
 .card .img img{
     height: 400px;
 }
 .card .booknow{
     position: absolute;
-    top: 15px;
-    right: 8px;
+    top: 18px;
+    right: 10px;
 }
 .card .booknow a{
     text-decoration: none;
@@ -475,6 +479,43 @@ nav ul li a:hover{
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
+.card .features {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    text-align: left;
+    color: #013180;
+}
+.f1{
+    width: 200px;
+    padding: 15px 20px;
+    border-radius: 0px 7px 7px 0;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 10px 0;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+.f1 h5 span{
+    position: absolute;
+    left: 55px;
+    color: #020102;
+}
+.card:hover .f1a{
+    transform: translateX(0);
+    opacity: 1;
+}
+.card:hover .f1b{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.card:hover .f1c{
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
 
 .reveal{
     position: relative;
