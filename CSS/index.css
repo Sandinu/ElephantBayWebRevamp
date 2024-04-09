@@ -58,7 +58,7 @@ nav ul li a{
     font-size: 15px;
 }
 nav ul li a:hover{
-    color: var(--c5);
+    color: #bad3ff;
 }
 .active{
     font-weight: 600;
@@ -400,13 +400,86 @@ nav ul li a:hover{
     transform: scale(1.5);
 }
  
-
+.sec4{
+    padding: 50px 0;
+}
+.heading h1{
+    font-family: outfit;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--c1);
+    letter-spacing: 3px;
+}
+.sec4 .container{
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.card{
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative;
+}
+.card .img img{
+    height: 400px;
+}
+.card .booknow{
+    position: absolute;
+    top: 15px;
+    right: 8px;
+}
+.card .booknow a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 12px;
+    background: rgba(0, 49, 128, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.card .booknow i{
+    font-size: 13px;
+}
+.card .booknow a:hover{
+    background: rgba(0, 49, 128, 0.8);
+}
+.card .text{
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.card .text .name h3{
+    width: 90%;
+    background: rgba(0, 0, 0, 0.35);
+    margin: auto;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    border-radius: 7px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.card .text h5{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
 
 .reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    display: none;
     transition: all 0.5s ease-in-out;
 }
 .appear{
