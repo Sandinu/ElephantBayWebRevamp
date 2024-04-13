@@ -8,6 +8,17 @@
     --c5 : #609DFE;
     --bg : #ECF3FF;
 }
+::-webkit-scrollbar{
+    background: var(--c1);
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--c2);
+    border-radius: 10px;
+    border-radius: 0;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -577,6 +588,8 @@ nav ul li a:hover{
     height: 100%;
     content: '';
     border-radius: 7px;
+    overflow: hidden;
+    align-items: center;
 }
 .s4container .img3{
     background: #0061FE;
@@ -586,6 +599,7 @@ nav ul li a:hover{
     height: 100%;
     content: '';
     border-radius: 7px;
+    overflow: hidden;
 }
 .s4container .img2{
     background: #0061FE;
@@ -595,6 +609,14 @@ nav ul li a:hover{
     height: 100%;
     content: '';
     border-radius: 7px;
+    overflow: hidden;
+}
+.s4container img{
+    width: 100%;
+    display: flex;
+}
+.s4container .img1 img, .s4container .img3 img{
+    transform: translateY(-100px);
 }
 
 #sec6{
