@@ -508,16 +508,16 @@ nav ul li a:hover{
 .card:hover .f1b{
     transform: translateX(0);
     opacity: 1;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 }
 .card:hover .f1c{
     transform: translateX(0);
     opacity: 1;
-    transition-delay: 0.5s;
+    transition-delay: 0.4s;
 }
 
 #sec5{
-    padding: 40px 0;
+    padding-bottom: 70px;
 }
 .s4container{
     width: 95%;
@@ -602,6 +602,7 @@ nav ul li a:hover{
     width: 100%;
     background: #F5F5F5;
     margin-top: 50px auto;
+    z-index: 4;
 }
 
 .swiper {
@@ -674,6 +675,80 @@ nav ul li a:hover{
 
 
 footer{
+    background: var(--c1);
+    min-height: 280px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    position: relative;
+}
+footer .left{
+    grid-column: 1;
+}
+footer .buttons{
+    margin: 0 !important;
+}
+footer .buttons button{
+    margin: 10px;
+    width: 320px;
+}
+footer .center{
+    grid-column: 2;
+}
+footer .text{
+    color: var(--c5);
+    font-family: outfit;
+}
+footer .text h2{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: var(--c4);
+}
+footer .text h4{
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: var(--c4);
+}
+footer .center .text a{
+    line-height: 35px;
+    text-decoration: none;
+    color: var(--c4);
+    font-size: 18px;
+    margin: 5px;
+}
+
+footer .center .text a:hover{
+    color: var(--c5);
+}
+footer .right{
+    grid-column: 3;
+}
+footer .right iframe{
+    border-radius: 7px;
+}
+footer .copyright{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: var(--c5);
+    font-weight: 300;
+    font-size: 14px;
+}
+footer .copyright a{
+    text-decoration: none;
+    color: var(--c5);
+}
+
+footer .copyright a:hover{
+    color: var(--c4);
 }
 
 .reveal{
@@ -681,10 +756,12 @@ footer{
     transform: translateY(150px);
     opacity: 0;
     transition: all 0.4s ease-in-out;
+    z-index: 4;
 }
 .appear{
     transform: translateY(0px);
     opacity: 1;
+    z-index: 4;
 }
 @keyframes animate{
     0%{

@@ -6,7 +6,7 @@ function scrollReveal() {
     for (let i = 0; i < reveals.length; i++) {
         let windowH = window.innerHeight;
         let revealH = reveals[i].getBoundingClientRect().top;
-        let revealpoint = 150;
+        let revealpoint = 100;
     
         if (revealH < windowH - revealpoint) {
             reveals[i].classList.add("appear");
