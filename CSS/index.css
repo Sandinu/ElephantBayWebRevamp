@@ -416,11 +416,11 @@ nav ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 .card{
-    width: 370px;
-    height: 400px;
+    width: 310px;
+    height: 380px;
     overflow: hidden;
     border-radius: 7px;
     position: relative;
@@ -456,7 +456,7 @@ nav ul li a:hover{
 }
 .card .text{
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     left: 0;
     right: 0;
     color: white;
@@ -516,17 +516,175 @@ nav ul li a:hover{
     transition-delay: 0.5s;
 }
 
+#sec5{
+    padding: 40px 0;
+}
+.s4container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 200px 200px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+.s4container .text{
+    grid-row: span 2;
+    grid-column: 1/span 3;
+    text-align: center;
+    justify-content: center;
+    font-family: OutFit;
+}
+.s4container .text h4{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: var(--c3);
+    margin-bottom: 5px;
+}
+.s4container .text h3{
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 2px;
+    line-height: 55px;
+    color: var(--c1);
+    margin-bottom: 30px;
+}
+.s4container .text a{
+    text-decoration: none;
+    font-family: ubuntu;
+    font-weight: 300;
+    border-radius: 7px;
+    border: 1px solid var(--c1);
+    width: 100px;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    transition: all 0.1s ease-in-out;
+}
+
+.s4container .text a:hover{
+    background: var(--c1);
+    color: white;
+}
+
+.s4container .img1{
+    background: #0061FE;
+    grid-row: 1;
+    grid-column: 4/span 3;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 7px;
+}
+.s4container .img3{
+    background: #0061FE;
+    grid-row: 2;
+    grid-column: 4/span 3;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 7px;
+}
+.s4container .img2{
+    background: #0061FE;
+    grid-row: 1/span 2;
+    grid-column: 7/span 2;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 7px;
+}
+
+#sec6{
+    padding: 30px 0;
+    width: 100%;
+    background: #F5F5F5;
+    margin-top: 50px auto;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 450px !important;
+    height: 280px !important;
+    background: white;
+    position: absolute;
+    filter: blur(5px);
+    opacity: 0.5;
+    border-radius: 7px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.123);
+}
+.swiper-slide-active{
+    opacity: 1;
+    filter: blur(0px);
+}
+.testi{
+    position: relative;
+    margin: auto;
+    align-items: center;
+    padding: 50px 30px;
+}
+
+.name{
+    font-family: outfit;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.name h4{
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+    letter-spacing: 1px;
+}
+.name .fi{
+    margin-left: 5px;
+    height: 20px;
+}
+.name h6{
+    color: gray;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.testText h5{
+    font-family: ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.mySwiper .swiper-slide {
+    margin-right: 10px; /* Adjust spacing between slides */
+}
+.bar{
+    position: relative;
+    margin-top: 30px;
+}
+
+
+footer{
+}
 
 .reveal{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .appear{
     transform: translateY(0px);
     opacity: 1;
-    display: initial;
 }
 @keyframes animate{
     0%{

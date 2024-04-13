@@ -7,6 +7,8 @@
     <link rel="icon" href="Images/LogoW.png">
     <link rel="stylesheet" href="CSS/index.css">
     <script src="https://kit.fontawesome.com/1a58d1a0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
 </head>
 <body>
     <header>
@@ -254,9 +256,136 @@
                 </div>
             </div>
         </section>
-
+        <section id="sec5" class="reveal ">
+            <div class="s4container">
+                <div class="text">
+                    <h4>OUR</h4>
+                    <h3>WEDDING<br>CORNER</h3>
+                    <a href="#">CONTACT US</a>
+                </div>
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+        </section>
+        <section id="sec6" class="reveal ">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>Sphythian <span class="fi fi-ae"></span></h4>
+                            <h6>April 7, 2024</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>The view overlooking the pool towards the elephants feeding during the day. The food was good, albeit a bit pricey. It's worth getting out a bit and exploring the zoo, shops and other places in the area.</h5>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>Sergey <span class="fi fi-kz"></span></h4>
+                            <h6>April 11, 2024</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>The hotel has undoubtedly seen better days)) but, overall, everything is pretty good, it’s more than suitable for spending the night and looking at the elephants in the morning. And, by the way, getting up at seven in the morning is completely optional. At ten in the morning almost everyone is brought in for a wash, it’s much more interesting.</h5>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>Zacharidesová <span class="fi fi-sk"></span></h4>
+                            <h6>March 4, 2024</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>The location for seeing the elephants in the river is great. It is near to elephant orphanage too. The hotel is now little bit old it must have been famous once.</h5>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>David <span class="fi fi-gb"></span></h4>
+                            <h6>March 2, 2024</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>Views from hotel and bedroom. Lovely swimming pool and bar and eating area. Has great potential but needs a lot of work. Staff happy and smiling. Food OK</h5>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>Alice <span class="fi fi-nz"></span></h4>
+                            <h6>February 12, 2024</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>The location to the elephants that bathe and hang out in the river is incredible. When I was there they came right up to the hotel boundary.</h5>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testi">
+                        <div class="name">
+                            <h4>Eleni <span class="fi fi-gr"></span></h4>
+                            <h6>November 15, 2023</h6>
+                        </div>
+                        <div class="testText">
+                            <h5>Staff was friendly and kind . Rooms were spacious and the food was just fine . There is a gift shop outside the hotel in the corner she makes special prices and she is really worth it !!</h5>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <div class="bar">
+            <div class="scroll">
+                <div>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                </div>
+                <div>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                    <span>HOTEL ELEPHANT BAY, PINNAWALA</span>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+
+    </footer>
     <script src="JS/scrollreveal.js"></script>
     <script src="JS/ImageSlider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: false,
+          },
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            pauseOnMouseEnter: true
+          }
+        });
+    </script>
 </body>
 </html>
